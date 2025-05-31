@@ -39,3 +39,16 @@ function showTask(){
 
 }
 showTask();
+
+
+
+var changeBtn = document.getElementById('dark-btn');
+
+changeBtn.onclick = function(){
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')){
+        changeBtn.innerHTML= 'Day';
+    }else{
+        changeBtn.innerHTML= 'Night';
+    }
+}
